@@ -2,7 +2,7 @@
 # Name: <your name here>
 # Collaborators:
 # Time Spent: x:xx
-list_to_return = []
+
 
 get_permutations(sequence):
     '''
@@ -23,7 +23,7 @@ get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
-    
+    list_to_return = []
 
     if len(sequence) == 1:
         return list(sequence)

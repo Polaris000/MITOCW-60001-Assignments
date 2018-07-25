@@ -30,7 +30,6 @@ get_permutations(sequence):
 
     else:
         init_char = sequence[0]
-
         copy_str = sequence[1:]
 
         for i in get_permutations(copy_str):
@@ -40,18 +39,12 @@ get_permutations(sequence):
                 
                 x_temp.insert(j, init_char)
                
-
                 list_to_return.append("".join(x_temp))
                 
-
             if (i in list_to_return):
                 list_to_return.remove(i)
 
-
     return list_to_return            
-
-
-    
 
 if __name__ == '__main__':
 #    #EXAMPLE
